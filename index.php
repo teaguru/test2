@@ -1,5 +1,5 @@
 <?php
-$array = [1, 1, 2, 3, 4, -51, 12, 12, 12, -51];
+$array = [1, 1, 2, 3, 4, -51, 12, 12, 12, -51, -51];
 
 function getPair($array)
 {
@@ -7,8 +7,7 @@ function getPair($array)
     for ($i = 1; $i <= count($array) - 1; $i++) {
         if ($array[$i] == $array[$i - 1]) {
             $pairCount++;
-            echo $i;
-        }
+            }
     }
     echo $pairCount;
 }
